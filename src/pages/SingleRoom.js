@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { RoomContext } from '../context';
 import { Link } from 'react-router-dom';
-
+import StyledHero from '../components/StyledHero';
 
 export default class SingleRoom extends Component {
 	constructor(props) {
@@ -33,13 +33,15 @@ export default class SingleRoom extends Component {
 				</div>
 			);
 		}
-const {name, description, capacity,size,price,extras,breafast,pets,images} = room;
-		return <Hero hero='roomsHero'>  
-        <Banner title={`${name} room`}>
-        <Link to="/rooms" className="btn-primary">
-        Back To rooms
-        </Link>
-        </Banner>
-        </Hero>;
+		const { name, description, capacity, size, price, extras, breafast, pets, images } = room;
+		return (
+			<StyledHero img={images[0] || this.state.defaultBcg}>
+				<Banner title={`${name} room`}>
+					<Link to="/rooms" className="btn-primary">
+						Back To rooms
+					</Link>
+				</Banner>
+			</StyledHero>
+		);
 	}
 }

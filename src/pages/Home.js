@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {FeaturedRooms} from '../components/FeaturedRooms';
+
 const Home = (props) => {
 	return (
 		<>
