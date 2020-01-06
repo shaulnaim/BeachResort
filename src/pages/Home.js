@@ -9,7 +9,7 @@ export default (props) => {
 	return (
 		<>
 		<Hero>
-			<Banner title="luxury rooms" subTitle="delux rooms starting at $500">
+			<Banner title="luxury rooms" subTitle="WoW - delux rooms starting at $500">
 				<Link to="/rooms" className="btn-primary">
 					Our Rooms
 				</Link>
