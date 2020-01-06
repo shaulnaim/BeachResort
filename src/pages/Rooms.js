@@ -2,10 +2,11 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import RoomsContainer from '../components/RoomsContainer'
 
-const Rooms = (props) => {
+export default  (props) => {
 	return (
+		<>
 		<Hero hero="roomsHero">
 			<Banner title="Our Rooms">
 				<Link to="/" className="btn-primary">
@@ -13,9 +14,8 @@ const Rooms = (props) => {
 				</Link>
 			</Banner>
 		</Hero>
+		<RoomsContainer></RoomsContainer>
+	</>
 	);
 };
 
-Rooms.propTypes = {};
-
-export default Rooms;

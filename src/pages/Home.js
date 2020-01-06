@@ -3,10 +3,9 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import Services from '../components/Services';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {FeaturedRooms} from '../components/FeaturedRooms';
 
-const Home = (props) => {
+export default (props) => {
 	return (
 		<>
 		<Hero>
@@ -22,4 +21,3 @@ const Home = (props) => {
 	);
 };
 
-export default Home;
